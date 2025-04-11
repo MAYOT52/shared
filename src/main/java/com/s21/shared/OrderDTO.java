@@ -15,6 +15,14 @@ public class OrderDTO {
     private int quantity;
     private OrderStatus status;
 
+    public OrderDTO(){
+        orderID=null;
+        userID=null;
+        product="";
+        quantity=0;
+        status=null;
+    }
+
     @Default
     public OrderDTO(UUID orderID, UUID userID, String product, int quantity, OrderStatus status) {
         this.orderID = orderID;
